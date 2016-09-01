@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Challenge</title>
+
+    <script type="text/javascript" src="/vendor/angular.min.js"></script>
+    <script type="text/javascript" src="/vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+
+    <script type="text/javascript" src="/scripts/controllers/newHero.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/viewHeros.js"></script>
+
+    <link rel="stylesheet" href="/styles/main.css"></script>
+  </head>
+  <body ng-app="myApp">
+    <center>
+      <h1>Hero Tracker 9000</h1>
+      <div ng-include="'/views/partials/nav.html'"></div>
+      <div ng-view></div>
+    </center>
+  </body>
+</html>
